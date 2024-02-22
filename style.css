@@ -1,0 +1,249 @@
+*{
+    font-family: 'Lato', sans-serif;
+  }
+  
+  :root{
+    font-size: 18px;
+    --bg-color: #757575;
+    --text-color: white;
+  }
+  
+  a{
+    color: var(--text-color);
+  }
+  
+  body{
+  
+      background: url(images/background.gif) ;
+      background-attachment: fixed;
+      background-size: cover;
+      overflow: hidden;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      font-family: 'Lato', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+  }
+
+  .container{
+
+      display: flex;
+      background: rgba(0, 0, 0, 0.425);
+      width: 60.625em;
+      height: 34.5em;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px #0000008e;
+      border: 1px solid #1717188e;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:  30%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .interactions{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 3rem;
+  }
+  
+
+  .card{
+    width: 15rem;
+    height: 8.5rem;
+    background-color: rgba(0, 0, 0, 0.39);
+    margin: 15px;
+    border-radius: 12px;
+    transition: all ease 500ms;
+  }
+
+  .counter{
+    height: 100%;
+    width: 100%;
+    font-size: 100px;
+    font-weight: 100px;
+    text-align: center;
+    color: transparent;
+  }
+
+  #game{
+    background: url(images/cs2.jpg);
+    background-size: cover;
+  }
+
+  #photos{
+    background-image: url(images/alfa.jpeg);
+    background-size: cover;
+    animation: changeBg 30s infinite;
+}
+
+@keyframes changeBg {
+    0% {
+      background-image: url(images/alfa.jpeg); 
+    }
+    15%{
+      background-image: url(images/alfa.jpeg); 
+    }
+    25% {
+      background-image: url(images/suei.jpeg);
+    }
+    35% {
+      background-image: url(images/suei.jpeg);
+    }
+    50% {  
+      background-image: url(images/aiki.jpg);
+    }
+    65% {  
+      background-image: url(images/aiki.jpg);
+    }
+    75% {
+      background-image: url(images/gato.jpg); 
+    }
+    95% {
+      background-image: url(images/gato.jpg); 
+    }
+    100% {
+      background-image: url(images/mora.jpg);
+    }
+    100% {
+      background-image: url(images/mora.jpg);
+    }
+  }
+
+.search{
+
+  padding-top: 40px;
+  display: flex;
+
+}
+
+.search-bar{
+
+  align-content: end;
+  width: 100%;
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  border-radius:60px;
+  backdrop-filter: blur(4px) saturate(100%);
+}
+
+.search-bar input{
+
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 28px;
+  font-size: 20px;
+  color: #cac7ff;  
+}
+
+::placeholder{
+
+  color: #cac7ff;
+
+}
+
+.search-bar button img{
+  width: 25px;
+}
+
+.search-bar button{
+
+  padding-right: 8px;
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
+  position: relative;
+  right: -263px;
+  top: 2.8px;
+}
+
+.links a:hover{
+  transform: scale(1.3);
+}
+
+.card:hover{
+   transform: scale(1.3);
+ }
+
+ .links{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-top: 50px;
+}
+
+.links a{
+  font-size: 50px;
+  transition: all ease 500ms;
+  justify-content: center;
+  padding: center;
+}
+
+.discord{
+    color: #4363d6;
+}
+
+.twitter{
+   color: rgb(0, 162, 255);
+}
+
+.instagram{
+   background: linear-gradient(rgb(221, 0, 221), rgb(255, 29, 66),red,yellow);
+    background-clip: text;
+    color: transparent;
+}
+
+.youtube{
+   color: red;
+}
+
+.twitch{
+    color: rgb(119, 0, 255);
+}
+
+.links a:hover{
+   transform: scale(1.3);
+}
+
+.tarjeta:hover{
+    transform: scale(1.3);
+  }
+
+
+.container-clock {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container-clock h1 {
+    font-size: 4rem;
+    
+}
+
+.container-clock p {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+}
+
+#date{
+  position: relative;
+  top: -40px;
+  left: 220px;
+}
